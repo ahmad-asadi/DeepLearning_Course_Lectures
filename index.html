@@ -4,20 +4,85 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>AUT Deep Learning Course</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css">
 
+		<!-- Include Vazir Farsi font from Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="css/customizations.css">
+
 	</head>
 	<body>
+	<div class="logo top-left">
+		<img src="assets/imgs/aut_logo_fa_w.png" alt="دانشگاه صنعتی امیرکبیر" class="logo-image">
+		<p class="logo-type">دانشگاه صنعتی امیرکبیر</p>
+	</div>
+
+	<div class="logo top-right">
+		<img src="assets/imgs/ce_logo_fa.png" alt="دانشکده مهندسی کامپیوتر" class="logo-image">
+		<p class="logo-type">دانشکده مهندسی کامپیوتر</p>
+	</div>
+
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<!-- Introduction Section -->
+				<section>
+					<!-- Start Slide -->
+					<section data-markdown>
+						<textarea data-template>
+							## درس رایانش عصبی
+							##### احمد اسدی
+							##### دانشکده مهندسی کامپیوتر
+							##### دانشگاه صنعتی امیرکبیر
+							##### نیمسال اول تحصیلی 1403-1404
+						</textarea>
+					</section>
+
+					<!-- Content Table Slide -->
+					<section>
+						<h2 style="text-align: right">فهرست مطالب</h2>
+						<ul>
+							<li>مقدمات</li>
+							<li>مدل‌های عصبی خطی</li>
+							<li>شبکه پرسپترونی چندلایه</li>
+							<li>یادگیری عمیق</li>
+							<li>شبکه‌های عصبی کانولوشنی</li>
+							<li>شبکه‌های عصبی بازگشتی</li>
+							<!-- Add additional content as needed -->
+						</ul>
+					</section>
+
+					<section>
+						<h2 style="text-align: right">فهرست مطالب</h2>
+						<ul>
+							<li>مکانیزم توجه</li>
+							<li>الگوریتم‌های بهینه‌سازی</li>
+							<li>بهره‌وری محاسبات</li>
+							<li>مدل‌های معروف بینایی ماشین</li>
+							<li>مدل‌های معروف پردازش متن</li>
+							<li>توصیه‌گرهای عصبی</li>
+							<li>شبکه‌های مولد متخاصم</li>
+							<!-- Add additional content as needed -->
+						</ul>
+					</section>
+					<section>
+						<h2>منبع اصلی</h2>
+						<img class="fragment fade-in-then-semi-out" src="assets/imgs/d2lbook.jpg" style="float: left; width: 40%;">
+						<div class="fragment fade" style="float: right; width: 60%;">
+							<ul style="list-style-type: none;">
+								<li class="fragment custom blur" style="padding: 30px 0px;">مقدمات ریاضی</li>
+								<li class="fragment custom blur" style="padding: 30px 0px;">محوریت اصلی با پیاده‌سازی‌ها</li>
+								<li class="fragment custom blur" style="padding: 30px 0px;">مبتنی بر چارچوب کاری PyTorch</li>
+							</ul>
+						</div>
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -33,7 +98,12 @@
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+
+				markdown: {
+					smartypants: true,
+				},
+
 			});
 		</script>
 	</body>

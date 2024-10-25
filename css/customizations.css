@@ -1,0 +1,79 @@
+.reveal section{
+    width: 95%; /* Set to 95% or any desired percentage */
+    max-width: 95%; /* Limit max width to prevent overflow */
+    margin: auto; /* Center the slides within the viewport */
+}
+
+/* Logo positioning styles */
+.logo {
+    position: fixed;
+}
+
+.logo img {
+    position: fixed;
+
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    top: 20px; /* Distance from top of the page */
+}
+
+.logo p {
+    position: fixed;
+
+    direction: rtl;
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    top: 50px; /* Distance from top of the page */
+    font-size: xx-large;
+    font-family: 'B Nazanin', serif ;
+
+}
+
+.top-left img.logo-image {
+    left: 50px; /* Distance from the left edge */
+}
+
+.top-left p.logo-type {
+    color: #93a1a1;
+    left: 150px;
+}
+
+.top-right img.logo-image{
+    right: 50px; /* Distance from the right edge */
+}
+
+
+.top-right p.logo-type {
+    color: #93a1a1;
+    right: 200px;
+}
+
+
+.center h1 h2 h3 h4 h5 h6 {
+    text-align: center;
+}
+
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6, .reveal ul {
+    font-family: 'B Nazanin', 'roboto',  sans-serif;
+    direction: rtl; /* Set right-to-left for Farsi text */
+}
+
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    text-align: center; /* Align text to the right */
+    width: 100%;
+}
+
+.cover {
+    width: 100%; /* Set the image to full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.fragment.blur {
+    filter: blur(5px);
+}
+.fragment.blur.visible {
+    filter: none;
+}

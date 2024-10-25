@@ -149,7 +149,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .reveal dl,
 .reveal ul {
   display: inline-block;
-  text-align: left;
+  text-align: right;
   margin: 0 0 0 1em;
 }
 
@@ -210,7 +210,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   position: relative;
   width: 90%;
   margin: var(--r-block-margin) auto;
-  text-align: left;
+  text-align: right;
   font-size: 0.55em;
   font-family: var(--r-code-font);
   line-height: 1.2em;
@@ -252,7 +252,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 
 .reveal table th,
 .reveal table td {
-  text-align: left;
+  text-align: right;
   padding: 0.2em 0.5em 0.2em 0.5em;
   border-bottom: 1px solid;
 }
